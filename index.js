@@ -5,7 +5,7 @@
  * packages which depend on navigator.userAgent to be rendered on the server.
  */
 
-export default function navigatorUserAgent(req, res, next) {
+module.exports = function navigatorUserAgent(req, res, next) {
 
 	global.navigator = {
 
