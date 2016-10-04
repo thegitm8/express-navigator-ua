@@ -1,6 +1,6 @@
 {
   "name": "express-navigator-ua",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "Adds the navigator.userAgent object to every request which some packages (Material-UI, React Boxes, etc.) need for server side rendering (SSR).",
   "main": "index.js",
   "scripts": {},
