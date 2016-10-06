@@ -5,14 +5,11 @@
  * packages which depend on navigator.userAgent to be rendered on the server.
  */
 
-module.exports = function navigatorUserAgent(req, res, next) {
 
-	global.navigator = {
+var middleware = require('./middleware')
+var uaGlobal = require('./global')
 
-		userAgent: req.headers['user-agent']
-
-	}
-
-	next()
-
+module.exports = {
+	middleware: middleware,
+	global: uaGlobal
 }
